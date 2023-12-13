@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@xeokit/xeokit-sdk": "^2.4.1"
+  }
+}

@@ -1,0 +1,12 @@
+xeokit_widget:
+  version: 1.x
+  title: 'Xeokit 3D viewer'
+  js:
+    js/node_modules/@xeokit/xeokit-sdk/dist/xeokit-sdk.min.es.js: { attributes: { type: module } }
+    js/viewer.js: { attributes: { type: module } }
+  css:
+    theme:
+      css/viewer.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

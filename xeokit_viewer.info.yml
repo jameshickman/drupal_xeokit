@@ -1,0 +1,5 @@
+name: "Xeokit Viewer"
+type: module
+description: "For any link to a supported CAD/3D file type embed the Xeokit online viewer."
+package: 'Media'
+core_version_requirement: ^8.8 || ^9 || ^10.0

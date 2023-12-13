@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="56.197498mm"
+   height="57.044167mm"
+   viewBox="0 0 56.197498 57.044167"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="icon-default.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.75544332"
+     inkscape:cx="105.89808"
+     inkscape:cy="108.54554"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="SVGID_15_"
+       gradientUnits="userSpaceOnUse"
+       x1="143"
+       y1="303.3772"
+       x2="249"
+       y2="303.3772">&#10;		<stop
+   offset="0"
+   style="stop-color:#0083DF"
+   id="stop29" />
+&#10;		<stop
+   offset="1"
+   style="stop-color:#17A3D4"
+   id="stop30" />
+&#10;	</linearGradient>
+    <linearGradient
+       id="SVGID_16_"
+       gradientUnits="userSpaceOnUse"
+       x1="249"
+       y1="303.3772"
+       x2="355"
+       y2="303.3772">&#10;		<stop
+   offset="0"
+   style="stop-color:#004D97"
+   id="stop31" />
+&#10;		<stop
+   offset="1"
+   style="stop-color:#057CD3"
+   id="stop32" />
+&#10;	</linearGradient>
+    <linearGradient
+       id="SVGID_17_"
+       gradientUnits="userSpaceOnUse"
+       x1="249"
+       y1="277.67941"
+       x2="249"
+       y2="168.1707">&#10;		<stop
+   offset="0"
+   style="stop-color:#00CCFF"
+   id="stop33" />
+&#10;		<stop
+   offset="1"
+   style="stop-color:#8FE9DF"
+   id="stop34" />
+&#10;	</linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-76.99375,-119.85625)">
+    <g
+       id="g34"
+       transform="matrix(0.26458333,0,0,0.26458333,39.21125,75.353333)">&#10;	<linearGradient
+   id="linearGradient2"
+   gradientUnits="userSpaceOnUse"
+   x1="143"
+   y1="303.3772"
+   x2="249"
+   y2="303.3772">&#10;		<stop
+   offset="0"
+   style="stop-color:#0083DF"
+   id="stop1" />
+&#10;		<stop
+   offset="1"
+   style="stop-color:#17A3D4"
+   id="stop2" />
+&#10;	</linearGradient>
+&#10;	<polygon
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   fill="url(#SVGID_15_)"
+   points="143,222.9 249,277.7 249,383.8 143,329.1 "
+   id="polygon30"
+   style="fill:url(#SVGID_15_)" />
+&#10;	<linearGradient
+   id="linearGradient4"
+   gradientUnits="userSpaceOnUse"
+   x1="249"
+   y1="303.3772"
+   x2="355"
+   y2="303.3772">&#10;		<stop
+   offset="0"
+   style="stop-color:#004D97"
+   id="stop3" />
+&#10;		<stop
+   offset="1"
+   style="stop-color:#057CD3"
+   id="stop4" />
+&#10;	</linearGradient>
+&#10;	<polygon
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   fill="url(#SVGID_16_)"
+   points="355,222.9 249,277.7 249,383.8 355,329.1 "
+   id="polygon32"
+   style="fill:url(#SVGID_16_)" />
+&#10;	<linearGradient
+   id="linearGradient6"
+   gradientUnits="userSpaceOnUse"
+   x1="249"
+   y1="277.67941"
+   x2="249"
+   y2="168.1707">&#10;		<stop
+   offset="0"
+   style="stop-color:#00CCFF"
+   id="stop5" />
+&#10;		<stop
+   offset="1"
+   style="stop-color:#8FE9DF"
+   id="stop6" />
+&#10;	</linearGradient>
+&#10;	<polygon
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   fill="url(#SVGID_17_)"
+   points="142.8,222.9 249,277.7 355.2,222.9 249,168.2 "
+   id="polygon34"
+   style="fill:url(#SVGID_17_)" />
+&#10;</g>
+  </g>
+</svg>

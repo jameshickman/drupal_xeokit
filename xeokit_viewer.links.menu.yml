@@ -1,0 +1,6 @@
+xeokit_viewer.form:
+  title: Xeokit Viewer Prefrences
+  route_name: 'xeokit_viewer.form'
+  parent: 'system.admin_config_media'
+  description: 'Settings for the Xeokit 3D CAD Viewer'
+  weight: 99

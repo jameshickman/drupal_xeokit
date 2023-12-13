@@ -1,0 +1,7 @@
+xeokit_viewer.form:
+  path: '/admin/config/media/xeokit_viewer'
+  defaults:
+    _form: 'Drupal\xeokit_viewer\Form\Xeokit_viewerForm'
+    _title: 'Xeokit Viewer Prefrences'
+  requirements:
+    _permission: 'administer'

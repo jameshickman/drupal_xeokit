@@ -1,0 +1,17 @@
+<?php
+function xeokit_viewer_page_attachments(&$variables) {
+  $config = \Drupal::config('xeokit_viewer.settings');
+  $path = \Drupal::service('extension.list.module')->getPath('xeokit_viewer');
+  $variables['#attached']['library'][] = 'xeokit_viewer/xeokit_widget';
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['base_path'] = $path;
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['edges'] = $config->get('edges');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['position_x'] = (float)$config->get('position_x');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['position_y'] = (float)$config->get('position_y');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['position_z'] = (float)$config->get('position_z');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['look_x'] = (float)$config->get('look_x');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['look_y'] = (float)$config->get('look_y');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['look_z'] = (float)$config->get('look_z');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['up_x'] = (float)$config->get('up_x');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['up_y'] = (float)$config->get('up_y');
+  $variables['#attached']['drupalSettings']['xeokit_viewer']['up_z'] = (float)$config->get('up_z');
+}

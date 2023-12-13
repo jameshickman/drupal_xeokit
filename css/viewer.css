@@ -1,0 +1,74 @@
+/* Styling for the icon */
+.xeokit-viewer__icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.xeokit-viewer__icon-xkt {
+    background-image: url('icons/icon-default.svg');
+}
+
+.xeokit-viewer__icon-ifc,
+.xeokit-viewer__icon-ifc4 {
+    background-image: url('icons/IFC.png');
+}
+
+.xeokit-viewer__icon-cityjson {
+    background-image: url('icons/icon-default.svg');
+}
+
+.xeokit-viewer__icon-glft,
+.xeokit-viewer__icon-glb {
+    background-image: url('icons/glft.png');
+}
+
+.xeokit-viewer__icon-laz {
+    background-image: url('icons/icon-default.svg');
+}
+
+.xeokit-viewer__icon-obj {
+    background-image: url('icons/icon-default.svg');
+}
+
+.xeokit-viewer__icon-3dxml {
+    background-image: url('icons/icon-default.svg');
+}
+
+/* Styling for the overlay */
+.xeokit-viewer__overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    visibility: collapse;
+    background-color: white;
+}
+
+.xeokit-viewer__overlay_close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('icons/close.svg');
+    cursor: pointer;
+}
+
+#exokit-widget-attachment-point {
+    width: 100%;
+    height: 100%;
+}
