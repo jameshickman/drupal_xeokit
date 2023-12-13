@@ -64,7 +64,7 @@ window.addEventListener('load', (ev) => {
         else if (m_type == 'cityjson') {
             model = new CityJSONLoaderPlugin(o_viewer);
         }
-        else if (m_type == 'gift' || m_type == 'glb') {
+        else if (m_type == 'glft' || m_type == 'glb') {
             model = new GLTFLoaderPlugin(o_viewer);
         }
         else if (m_type == 'laz') {
