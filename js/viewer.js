@@ -153,7 +153,7 @@ window.addEventListener('load', (ev) => {
         el_overlay.classList.add('xeokit-viewer__overlay');
         const el_exokit_canvas = document.createElement('canvas');
         el_exokit_canvas.id = CANVAS_ID;
-        const el_overlay_close = document.createElement('div');
+        const el_overlay_close = document.createElement('button');
         el_overlay_close.addEventListener('click', close_clicked);
         el_overlay_close.classList.add('xeokit-viewer__overlay_close');
         el_overlay.appendChild(el_exokit_canvas);
