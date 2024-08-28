@@ -37,9 +37,9 @@ window.addEventListener('load', (ev) => {
             camera_look_z = drupalSettings.xeokit_viewer.look_z;
         o_viewer.camera.look = [camera_look_x, camera_look_y, camera_look_z];
 
-        var camera_up_x = -0.018;
-        var camera_up_y = 0.999;
-        var camera_up_z = 0.039;
+        let camera_up_x = -0.018;
+        let camera_up_y = 0.999;
+        let camera_up_z = 0.039;
         if (drupalSettings.xeokit_viewer.hasOwnProperty('up_x'))
             camera_up_x = drupalSettings.xeokit_viewer.up_x;
         if (drupalSettings.xeokit_viewer.hasOwnProperty('up_y'))
@@ -136,7 +136,7 @@ window.addEventListener('load', (ev) => {
             const ext = bin_links[i].href.split('.').slice(-1)[0].toLowerCase();
             if (known_types.includes(ext)) {
                 const el_container = bin_links[i].parentElement;
-                const el_icon = document.createElement("div");
+                const el_icon = document.createElement("button");
                 el_icon.classList.add('xeokit-viewer__icon');
                 el_icon.classList.add('xeokit-viewer__icon-' + ext);
                 el_icon.dataset['model_type'] = ext;
