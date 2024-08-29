@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@xeokit/xeokit-sdk": "^2.6.38"
+    "@xeokit/xeokit-sdk": "^2.6.38",
+    "web-ifc": "^0.0.57"
   }
 }

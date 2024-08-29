@@ -2,6 +2,7 @@ import {
     Viewer, XKTLoaderPlugin, WebIFCLoaderPlugin, CityJSONLoaderPlugin,
     GLTFLoaderPlugin, LASLoaderPlugin, OBJLoaderPlugin, XML3DLoaderPlugin
 } from './node_modules/@xeokit/xeokit-sdk/dist/xeokit-sdk.min.es.js'
+import * as WebIFC from './node_modules/web-ifc/web-ifc-api.js';
 
 window.addEventListener('load', (ev) => {
     const CANVAS_ID = "exokit-widget-attachment-point";
@@ -48,46 +49,55 @@ window.addEventListener('load', (ev) => {
             camera_up_z = drupalSettings.xeokit_viewer.up_z;
         o_viewer.camera.up = [camera_up_x, camera_up_y, camera_up_z];
 
-        let model = null;
-
-        if (m_type == 'xkt') {
-            model = new XKTLoaderPlugin(o_viewer);
-        }
-        else if (m_type == 'ifc' || m_type == 'ifc4') {
-            model = new WebIFCLoaderPlugin(
-                o_viewer,
-                {
-                    wasmPath: xeokit_installed_at + "dist/"
-                }
-            );
-        }
-        else if (m_type == 'cityjson') {
-            model = new CityJSONLoaderPlugin(o_viewer);
-        }
-        else if (m_type == 'glft' || m_type == 'glb') {
-            model = new GLTFLoaderPlugin(o_viewer);
-        }
-        else if (m_type == 'laz') {
-            model = new LASLoaderPlugin(o_viewer);
-        }
-        else if (m_type == 'obj') {
-            model = new OBJLoaderPlugin(o_viewer);
-        }
-        else if (m_type == '3dxml') {
-            model = new XML3DLoaderPlugin(o_viewer, {
-                workerScriptsPath : xeokit_installed_at + "src/plugins/XML3DLoaderPlugin/zipjs/"
-            });
-        }
+        let modelLoader = null;
 
         let edges = false;
-        if (drupalSettings.xeokit_viewer.edges > 0) edges = true;
+            if (drupalSettings.xeokit_viewer.edges > 0) edges = true;
 
-        if (model !== null) {
-            model.load({
-                id: 'CurrentModel',
-                src: url,
-                edges: edges
+        if (m_type == 'ifc' || m_type == 'ifc4') {
+            const IfcAPI = new WebIFC.IfcAPI();
+            IfcAPI.SetWasmPath('/' + drupalSettings.xeokit_viewer.base_path + "/js/node_modules/web-ifc/");
+            IfcAPI.Init().then(() => {
+                modelLoader = new WebIFCLoaderPlugin(o_viewer, {
+                    WebIFC,
+                    IfcAPI
+                });
+                modelLoader.load({
+                    id: 'CurrentModel',
+                    src: url,
+                    edges: edges
+                });
             });
+        }
+        else {
+            if (m_type == 'xkt') {
+                modelLoader = new XKTLoaderPlugin(o_viewer);
+            }
+            else if (m_type == 'cityjson') {
+                modelLoader = new CityJSONLoaderPlugin(o_viewer);
+            }
+            else if (m_type == 'glft' || m_type == 'glb') {
+                modelLoader = new GLTFLoaderPlugin(o_viewer);
+            }
+            else if (m_type == 'laz') {
+                modelLoader = new LASLoaderPlugin(o_viewer);
+            }
+            else if (m_type == 'obj') {
+                modelLoader = new OBJLoaderPlugin(o_viewer);
+            }
+            else if (m_type == '3dxml') {
+                modelLoader = new XML3DLoaderPlugin(o_viewer, {
+                    workerScriptsPath : xeokit_installed_at + "src/plugins/XML3DLoaderPlugin/zipjs/"
+                });
+            }
+
+            if (modelLoader !== null) {
+                modelLoader.load({
+                    id: 'CurrentModel',
+                    src: url,
+                    edges: edges
+                });
+            }
         }
     }
 
