@@ -104,6 +104,7 @@ window.addEventListener('load', (ev) => {
     const destroy_viewer = () => {
         o_viewer = null;
         document.getElementById(CANVAS_ID).remove();
+        el_overlay.querySelector('DIV').remove();
         const el_exokit_canvas = document.createElement('canvas');
         el_exokit_canvas.id = CANVAS_ID;
         el_overlay.appendChild(el_exokit_canvas);
